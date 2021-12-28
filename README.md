@@ -11,12 +11,12 @@ Read how we did it [on Medium](https://medium.com/@igalata13/how-to-create-a-bub
 
 <img src="shot.gif"/>
 
-## Requirements
+## 使用环境
 - Android SDK 16+
 
-## Usage
+## 用法
 
-Add to your root build.gradle:
+添加到您的根 build.gradle：
 ```Groovy
 allprojects {
 	repositories {
@@ -26,16 +26,17 @@ allprojects {
 }
 ```
 
-Add the dependency:
+添加依赖：
+
 ```Groovy
 dependencies {
-	compile 'com.github.igalata:Bubble-Picker:v0.2.4'
+	implementation 'com.github.igalata:Bubble-Picker:v0.2.4'
 }
 ```
 
-## How to use this library
+## 如何使用这个库
 
-Add `BubblePicker` to your xml layout
+添加 `BubblePicker` 到您的 xml 布局
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -54,6 +55,7 @@ Add `BubblePicker` to your xml layout
 ```
 
 Override onResume() and onPause() methods to call the same methods from the `BubblePicker`
+从`BubblePicker`重写onResume() 和 onPause() 方法
 
 Kotlin
 ```kotlin
@@ -83,7 +85,7 @@ protected void onPause() {
 }
 ```
 
-Pass the `PickerItem` list to the `BubblePicker`
+将 `PickerItem`的 list 传给 `BubblePicker`
 
 Kotlin
 ```kotlin
